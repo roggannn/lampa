@@ -1,0 +1,19 @@
+button{
+    width:100px;
+    height:50px;
+}
+
+#ruta{
+    position:absolute;
+    left:25%;
+    top:7%;
+    width:100px;
+    height:100px;
+    background-color: aqua;
+}
+
+#textinput{
+    position:absolute;
+    left:23%;
+    top:20%;
+}

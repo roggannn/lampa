@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="ruta"></div>
+    <img src="bilder/off.png" alt="" id="lampa">
+    <button id="btn" onclick="lampa()"></button>
+    <input type="text" id="textinput" onchange="checkforchange();">
+
+    <script>
+        let btn = document.getElementById("btn");
+        let lampan = document.getElementById("lampa");
+
+        function lampa(){
+            if (lampan.getAttribute('src') == "bilder/off.png"){
+                lampan.setAttribute('src', "bilder/on.png");
+            }
+            else if (lampan.getAttribute('src') == "bilder/on.png"){
+                lampan.setAttribute('src', "bilder/off.png");
+            }
+        }
+    </script>
+    <script>
+        let input = document.getElementById("textinput");
+        let ruta = document.getElementById("ruta");
+
+        function checkforchange(){
+            console.log("Text ändras");
+            if (input.val == "red" || input.contains == "Red"){
+                ruta.style.backgroundColor = red;
+                console.log("röd?");
+            }
+            else if (input.textContent == "blue" || input.textContent == "Blue"){
+                ruta.style.backgroundColor = blue;
+            }
+            else if (input.textContent == "green" || input.textContent == "Green"){
+                ruta.style.backgroundColor = green;
+            }
+            else
+            {
+                
+            }
+        }
+    </script>
+</body>
+</html>
